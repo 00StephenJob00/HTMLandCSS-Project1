@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department - University</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Computer Science Department</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#faculty">Faculty</a>
+                    <a href="#courses">Courses</a>
+                    <a href="#research">Research</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to Our Department</h2>
+                    <p>Advancing knowledge through innovative research and exceptional education in computer science.
+                    </p>
+                    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                        alt="University Campus" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="faculty" class="faculty-section">
+            <div class="container">
+                <h2><i class="fas fa-users"></i> Faculty Spotlight</h2>
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-header" onclick="toggleAccordion(this)">
+                            <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=300"
+                                alt="Dr. Sarah Johnson">
+                            <div class="faculty-info">
+                                <h3>Dr. Sarah Johnson</h3>
+                                <p>Professor of Artificial Intelligence</p>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="faculty-content">
+                            <p><strong>Research Areas:</strong> Machine Learning, Neural Networks, Computer Vision</p>
+                            <p><strong>Education:</strong> Ph.D. in Computer Science, MIT</p>
+                            <p><strong>Publications:</strong> 50+ peer-reviewed papers in top-tier conferences</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-header" onclick="toggleAccordion(this)">
+                            <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=300"
+                                alt="Dr. Michael Chen">
+                            <div class="faculty-info">
+                                <h3>Dr. Michael Chen</h3>
+                                <p>Associate Professor of Software Engineering</p>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="faculty-content">
+                            <p><strong>Research Areas:</strong> Software Architecture, Distributed Systems, Cloud
+                                Computing</p>
+                            <p><strong>Education:</strong> Ph.D. in Computer Science, Stanford University</p>
+                            <p><strong>Industry Experience:</strong> Former Senior Engineer at Google</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card">
+                        <div class="faculty-header" onclick="toggleAccordion(this)">
+                            <img src="https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=300"
+                                alt="Dr. Emily Rodriguez">
+                            <div class="faculty-info">
+                                <h3>Dr. Emily Rodriguez</h3>
+                                <p>Assistant Professor of Cybersecurity</p>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="faculty-content">
+                            <p><strong>Research Areas:</strong> Network Security, Cryptography, Privacy Protection</p>
+                            <p><strong>Education:</strong> Ph.D. in Computer Science, Carnegie Mellon University</p>
+                            <p><strong>Awards:</strong> NSF CAREER Award Recipient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <div class="container">
+                <h2><i class="fas fa-book"></i> Course Catalog</h2>
+                <div class="table-container">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Title</th>
+                                <th>Credits</th>
+                                <th>Prerequisites</th>
+                                <th>Instructor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS 101</td>
+                                <td>Introduction to Programming</td>
+                                <td>3</td>
+                                <td>None</td>
+                                <td>Dr. Johnson</td>
+                            </tr>
+                            <tr>
+                                <td>CS 201</td>
+                                <td>Data Structures & Algorithms</td>
+                                <td>4</td>
+                                <td>CS 101</td>
+                                <td>Dr. Chen</td>
+                            </tr>
+                            <tr>
+                                <td>CS 301</td>
+                                <td>Database Systems</td>
+                                <td>3</td>
+                                <td>CS 201</td>
+                                <td>Dr. Rodriguez</td>
+                            </tr>
+                            <tr>
+                                <td>CS 401</td>
+                                <td>Machine Learning</td>
+                                <td>4</td>
+                                <td>CS 201, MATH 220</td>
+                                <td>Dr. Johnson</td>
+                            </tr>
+                            <tr>
+                                <td>CS 450</td>
+                                <td>Software Engineering</td>
+                                <td>3</td>
+                                <td>CS 301</td>
+                                <td>Dr. Chen</td>
+                            </tr>
+                            <tr>
+                                <td>CS 480</td>
+                                <td>Cybersecurity</td>
+                                <td>3</td>
+                                <td>CS 301</td>
+                                <td>Dr. Rodriguez</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research-section">
+            <div class="container">
+                <h2><i class="fas fa-flask"></i> Research Areas</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Cutting-edge research in machine learning, deep learning, and neural networks to solve
+                            complex real-world problems.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Advanced security protocols, cryptography, and privacy protection systems for the digital
+                            age.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Software Engineering</h3>
+                        <p>Innovative approaches to software development, testing, and maintenance for large-scale
+                            systems.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>Big data analytics, data mining, and statistical modeling to extract insights from complex
+                            datasets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Information</h3>
+                    <p>Computer Science Department</p>
+                    <p>University Building, Room 301</p>
+                    <p>123 University Ave, City, State 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone"></i> Get in Touch</h3>
+                    <p>Phone: 8086204350</p>
+                    <p>Email: cs-dept@university.edu</p>
+                    <p>Fax: 8086520435</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 University Computer Science Department. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
